@@ -7,7 +7,7 @@ const app = express();
 
 //Connect to Database
 const mongoose = require('mongoose');
-const uri = 'mongodb+srv://vekjs:p131471483@cluster0-yzzb4.mongodb.net/test?retryWrites=true&w=majority';
+const uri = process.env.URI_DB;
 const options = {useNewUrlParser: true, useUnifiedTopology:true};
 
 
